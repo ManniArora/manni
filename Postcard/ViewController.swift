@@ -30,6 +30,7 @@ class ViewController: UIViewController {
         messageLabel.text=enterMessageTextField.text
         enterMessageTextField.text=""
         messageLabel.resignFirstResponder()
+        sendmailButton.setTitle("mail sent", forState: UIControlState.Normal)
     }
 }
 
