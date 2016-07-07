@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="pvl-0T-acR">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Papa-->
+        <scene sceneID="orO-6n-bBm">
+            <objects>
+                <viewController id="TX4-Ut-nmv" customClass="ViewController" customModule="Postcard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mkp-Z7-q0E"/>
+                        <viewControllerLayoutGuide type="bottom" id="c48-rH-P9p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Mdy-Vs-3Cw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumb_IMG_4331_1024.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="bEa-i7-Pj4">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="64" width="400" height="600"/>
+                                </variation>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="bEa-i7-Pj4"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="bEa-i7-Pj4"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" title="Papa" id="Tmc-En-Tfr">
+                        <barButtonItem key="rightBarButtonItem" title="View Message" id="ldV-jt-Lfp">
+                            <connections>
+                                <segue destination="uUA-fl-wL9" kind="show" id="cu8-Jw-2G8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dmK-Vf-07w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="562.5" y="416"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8qW-Q6-LJf">
+            <objects>
+                <viewController id="uUA-fl-wL9" customClass="ViewController" customModule="Postcard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tqy-If-bif"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gip-En-eAb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a8s-wi-CuI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="postcard.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="TPg-el-xyt">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="227" y="227" width="114" height="109"/>
+                                </variation>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1be-Jv-dKz">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="33" y="377" width="308" height="30"/>
+                                </variation>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iDl-mD-Ojp">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="33" y="428" width="308" height="30"/>
+                                </variation>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4da-j8-c1T">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="33" y="84" width="308" height="118"/>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hua-ex-vzM">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.74771210589671921" blue="0.49650204030340328" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Send Mail"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="5" y="306" width="214" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="sendMailButtonClicked:" destination="uUA-fl-wL9" eventType="touchUpInside" id="wtP-Dg-rLp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="TPg-el-xyt"/>
+                                <exclude reference="1be-Jv-dKz"/>
+                                <exclude reference="iDl-mD-Ojp"/>
+                                <exclude reference="4da-j8-c1T"/>
+                                <exclude reference="Hua-ex-vzM"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="TPg-el-xyt"/>
+                                <include reference="1be-Jv-dKz"/>
+                                <include reference="iDl-mD-Ojp"/>
+                                <include reference="4da-j8-c1T"/>
+                                <include reference="Hua-ex-vzM"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="enterMessageTextField" destination="iDl-mD-Ojp" id="eSb-Pb-8qg"/>
+                        <outlet property="enterNameTextField" destination="1be-Jv-dKz" id="pZw-dy-juW"/>
+                        <outlet property="messageLabel" destination="4da-j8-c1T" id="fhY-oM-GBk"/>
+                        <outlet property="sendmailButton" destination="Hua-ex-vzM" id="r61-I1-Zs8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FRI-Ai-EpX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1363.5" y="423"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ado-xb-48j">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pvl-0T-acR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="UVr-YZ-pE5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TX4-Ut-nmv" kind="relationship" relationship="rootViewController" id="MW4-WA-RuV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nsv-fc-YON" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-355.5" y="416"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="postcard.jpg" width="600" height="375"/>
+        <image name="thumb_IMG_4331_1024.jpg" width="1024" height="1024"/>
+    </resources>
+</document>
